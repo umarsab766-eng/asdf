@@ -443,7 +443,10 @@ class HouseMakerGame:
 @ui.page('/')
 def main():
     game = HouseMakerGame()
-
+import os
+port = int(os.getenv('PORT', 8080))
+host = '0.0.0.0'
 if __name__ in {'__main__', '__mp_main__'}:
 
-     ui.run(title='House Maker Game', port=8080, dark=False, reload=False)
+     ui.run(title='House Maker Game', port=port, host=host, dark=False, reload=False)
+
