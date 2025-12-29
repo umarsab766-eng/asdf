@@ -445,4 +445,5 @@ def main():
     game = HouseMakerGame()
 
 if __name__ in {'__main__', '__mp_main__'}:
-     ui.run(title='House Maker Game', port=8080, dark=False)
+
+     ui.run(title='House Maker Game', port=8080, dark=False, reload=False)
